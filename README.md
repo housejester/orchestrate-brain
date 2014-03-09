@@ -3,7 +3,7 @@
 Hubot brain that stores the brain in orchestrate.io
 
 ## Getting Started
-1. Install: `npm install hubot-brain-redis-hash`
+1. Install: `npm install orchestrate-brain`
 2. Configure (see below)
 3. Add `orchestrate-brain` to external-scripts.json in your hubot directory
 4. Fire up your hubot
