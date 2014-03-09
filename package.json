@@ -1,0 +1,35 @@
+{
+  "name": "orchestrate-brain",
+  "description": "Hubot brain that uses orchestrate.io.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/housejester/orchestrate-brain",
+  "author": {
+    "name": "James Estes",
+    "email": "james.estes@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/housejester/orchestrate-brain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/housejester/orchestrate-brain/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "https://github.com/housejester/orchestrate-brain/raw/master/LICENSE"
+    }
+  ],
+  "main": "src/scripts/orchestrate-brain",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "keywords": [
+    "orchestrate.io",
+    "hubot",
+    "hubot-brain"
+  ],
+  "dependencies": {
+    "orchestrate": "~0.0.5"
+  }
+}
