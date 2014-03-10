@@ -1,7 +1,7 @@
 {
   "name": "orchestrate-brain",
   "description": "Hubot brain that uses orchestrate.io.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/housejester/orchestrate-brain",
   "author": {
     "name": "James Estes",
