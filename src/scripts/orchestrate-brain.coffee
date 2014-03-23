@@ -2,7 +2,7 @@
 #   Stores the brain in Orchestrate.io
 #
 # Dependencies:
-#   "orchestrate": "~0.0.5"
+#   "orchestrate": "~0.0.8"
 #
 # Configuration:
 #   ORCHESTRATE_API_KEY
@@ -17,16 +17,17 @@
 #
 # Author:
 #   James Estes (http://github.com/housejester/orchestrate-brain)
+pjson = require('../package.json')
 
 module.exports = (robot) ->
   COLLECTION_NAME = process.env.ORCHESTRATE_COLLECTION || 'hubot:brain'
   BRAIN_JSON_CACHE = {}
   oio = require('orchestrate')(process.env.ORCHESTRATE_API_KEY)
+  oio._userAgent = oio._userAgent + ' orchestrate-brain/' + pjson.version
 
   load_data = (res) ->
-    if res.body.next
-      url = 'https://' + oio.constructor.ApiEndPoint + res.body.next.substring(3)
-      oio._get(url).then load_data
+    if res.links?.next
+      res.links.next.get().then load_data
 
     for item in res.body.results
       BRAIN_JSON_CACHE[item.path.key] = JSON.stringify item.value

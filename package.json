@@ -1,7 +1,7 @@
 {
   "name": "orchestrate-brain",
   "description": "Hubot brain that uses orchestrate.io.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/housejester/orchestrate-brain",
   "author": {
     "name": "James Estes",
@@ -30,6 +30,6 @@
     "hubot-brain"
   ],
   "dependencies": {
-    "orchestrate": "~0.0.5"
+    "orchestrate": "~0.0.8"
   }
 }
