@@ -17,7 +17,7 @@
 #
 # Author:
 #   James Estes (http://github.com/housejester/orchestrate-brain)
-pjson = require('../package.json')
+pjson = require('../../package.json')
 
 module.exports = (robot) ->
   COLLECTION_NAME = process.env.ORCHESTRATE_COLLECTION || 'hubot:brain'
